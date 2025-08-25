@@ -13,4 +13,16 @@ This app is still under development 🚧.
 -   Checkout system
 -   Modern & clean UI
 
+## 📸 Screenshots
 
+| Splash Page |
+|-------------|
+| ![Splash](screenshots/splash.png) |
+
+| Welcome Page |
+|--------------|
+| ![Welcome](screenshots/welcome_page.png) |
+
+| Signup Page | Login Page |
+|-------------|------------|
+| ![Signup](screenshots/signup_page.png) | ![Login](screenshots/login_page.png) |
