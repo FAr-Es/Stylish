@@ -15,13 +15,9 @@ This app is still under development 🚧.
 
 ## 📸 Screenshots
 
-| Splash Page |
-|-------------|
-| ![Splash](screenshots/splash.png) |
-
-| Welcome Page |
-|--------------|
-| ![Welcome](screenshots/welcome_page.png) |
+| Splash Page | Welcome Page |
+|-------------|------------|
+| ![Splash](screenshots/splash.png) | ![Welcome](screenshots/welcome_page.png) |
 
 | Signup Page | Login Page |
 |-------------|------------|
