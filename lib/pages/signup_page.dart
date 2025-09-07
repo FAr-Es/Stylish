@@ -121,9 +121,8 @@ class _SignupPageState extends State<SignupPage> {
                         print("Logo pressed");
                       },
                       style: TextButton.styleFrom(
-                        backgroundColor:
-                            Colors.transparent, // remove background
-                        padding: EdgeInsets.zero, // remove padding if needed
+                        backgroundColor: Colors.transparent,
+                        padding: EdgeInsets.zero,
                       ),
                       child: Image.asset(
                         "assets/images/Google.png",
@@ -135,9 +134,8 @@ class _SignupPageState extends State<SignupPage> {
                         print("Logo pressed");
                       },
                       style: TextButton.styleFrom(
-                        backgroundColor:
-                            Colors.transparent, // remove background
-                        padding: EdgeInsets.zero, // remove padding if needed
+                        backgroundColor: Colors.transparent,
+                        padding: EdgeInsets.zero,
                       ),
                       child: Image.asset("assets/images/Apple.png", height: 70),
                     ),
@@ -146,9 +144,8 @@ class _SignupPageState extends State<SignupPage> {
                         print("Logo pressed");
                       },
                       style: TextButton.styleFrom(
-                        backgroundColor:
-                            Colors.transparent, // remove background
-                        padding: EdgeInsets.zero, // remove padding if needed
+                        backgroundColor: Colors.transparent,
+                        padding: EdgeInsets.zero,
                       ),
                       child: Image.asset(
                         "assets/images/Facebook.png",
@@ -158,21 +155,30 @@ class _SignupPageState extends State<SignupPage> {
                   ],
                 ),
                 Gap(h: 10),
-                Text(
-                  "I Already Have an Account",
-                  style: TextStyle(color: MyColors.textSecondary),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/login_page');
-                  },
-                  child: Text(
-                    "Login",
-                    style: TextStyle(
-                      color: MyColors.buttonOne,
-                      fontWeight: FontWeight.bold,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "I Already Have an Account",
+                    
+                      style: TextStyle(
+                        color: MyColors.textSecondary,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(context, '/login_page');
+                      },
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          color: MyColors.buttonOne,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

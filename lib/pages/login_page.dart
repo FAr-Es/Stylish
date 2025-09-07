@@ -75,7 +75,7 @@ class _SignupPageState extends State<LoginPage> {
                   CustomButton(
                     text: "Login",
                     color: MyColors.buttonOne,
-                     onTap: () {
+                    onTap: () {
                       if (_formKey.currentState!.validate()) {
                         // ✅ valid — login logic
                         print("Logging in with: ${emailController.text}");
@@ -88,26 +88,82 @@ class _SignupPageState extends State<LoginPage> {
 
                   Gap(h: 40),
                   Text(
-                    "Create An Account",
-                    style: TextStyle(
-                      color: MyColors.textSecondary,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    "- OR Continue with -",
+                    style: TextStyle(color: MyColors.textSecondary),
                   ),
-                  TextButton(
-                    onPressed: () {
-                      Navigator.pushNamed(
-                        context,
-                        '/signup_page',
-                      ); 
-                    },
-                    child: Text(
-                      "Sign Up",
-                      style: TextStyle(
-                        color: MyColors.buttonOne,
-                        fontWeight: FontWeight.bold,
+                  Gap(h: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      TextButton(
+                        onPressed: () {
+                          print("Logo pressed");
+                        },
+                        style: TextButton.styleFrom(
+                          backgroundColor: Colors.transparent,
+                          padding: EdgeInsets.zero,
+                        ),
+                        child: Image.asset(
+                          "assets/images/Google.png",
+                          height: 70,
+                        ),
                       ),
-                    ),
+                      TextButton(
+                        onPressed: () {
+                          print("Logo pressed");
+                        },
+                        style: TextButton.styleFrom(
+                          backgroundColor: Colors.transparent,
+                          padding: EdgeInsets.zero,
+                        ),
+                        child: Image.asset(
+                          "assets/images/Apple.png",
+                          height: 70,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          print("Logo pressed");
+                        },
+                        style: TextButton.styleFrom(
+                          backgroundColor: Colors.transparent,
+                          padding: EdgeInsets.zero,
+                        ),
+                        child: Image.asset(
+                          "assets/images/Facebook.png",
+                          height: 70,
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  Gap(h: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Create An Account",
+                        style: TextStyle(
+                          color: MyColors.textSecondary,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(
+                            context,
+                            '/signup_page',
+                          );
+                        },
+                        child: Text(
+                          "Sign Up",
+                          style: TextStyle(
+                            color: MyColors.buttonOne,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
