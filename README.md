@@ -1,16 +1,22 @@
-# flutter_application_1
+# Stylish 👕🛍️
 
-A new Flutter project.
+A Flutter application for a **Clothes Store** project.  
+This app is still under development 🚧.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+| Signup Page | Login Page |
+|-------------|------------|
+| ![Signup](screenshots/splash_page.jpg) | ![Login](screenshots/welcome_page.jpg) |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Signup Page | Login Page |
+|-------------|------------|
+| ![Signup](screenshots/signup_page.png) | ![Login](screenshots/login_page.png) |
+
+
+
+
+
